@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main_img_box
+{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+}
+
+.img_box_krishna1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    border:  1px solid black;
+}
+
+.img_box_krishna2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    border:  1px solid black;
+}
+
+.krishna1_img
+{
+    height: 350px;
+}
+
+
+.krishna2_img
+{
+    height: 350px;
+}
+
+
+.button_box_task1
+{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
