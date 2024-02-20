@@ -24,4 +24,24 @@ $(".btn4").click(() => {
     "src",
     "https://w0.peakpx.com/wallpaper/150/121/HD-wallpaper-sri-krishna-pics-baby-krishna-lord-god-bhakti-devtional.jpg"
   );
-});
+ });
+
+
+//  const img = document.getElementsByClass('btn3');
+
+//  let toggle =true;
+
+//  img.addEventlistener('click',function()
+//  {
+//   toggle=!toggle;
+
+
+//   if(toggle)
+//   {
+//     img.src = 'img\\baby krishna 2.jpg';
+//   }
+//   else
+//   {
+//     img.src ='img\\baby krishna 1.jpg';
+//   }
+//  });

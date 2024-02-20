@@ -1,0 +1,29 @@
+@media only screen and (max-width: 769px) {
+  .nav_links_task2 {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    background: transparent;
+    top: 97px;
+    left: 0px;
+  border: 1px solid rgb(250, 70, 22);
+
+  }
+
+  .click_bar {
+    display: block;
+  }
+  .nav_links_task2 li {
+    margin: 2%;
+  }
+
+
+  .nav_bar_main_container {
+   
+    width: 100vw;
+    
+  }
+  
+}
