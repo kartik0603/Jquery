@@ -3,13 +3,15 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    width: 50%;
+    width: 40vw;
+    height: 30%;
     text-align: center;
-    background: transparent;
-    top: 150px;
+    background: white;
+    color: black;
+    top: 130px;
     left: 0px;
-  border: 1px solid rgb(250, 70, 22);
-
+    border: 0.5px solid rgb(250, 70, 22);
+    z-index: 1000;
   }
 
   .click_bar {
@@ -19,16 +21,27 @@
     margin: 2%;
   }
 
+  .nav_links_task2 li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    /* justify-content: center; */
+
+    align-items: center;
+  }
 
   .nav_bar_main_container {
-   
     width: 100vw;
-    
   }
 
   .Swiper_img_banner_task_2_jbl {
     width: 99vw;
-    
   }
-  
+
+  .swiper-button-next {
+    width: 20px;
+    height: 25px;
+  }
 }
