@@ -1,54 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 2</title>
     <link rel="stylesheet" href="task2.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media_task2.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-<body>
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      /* body {
+        background: white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      } */
+
+      .swiper {
+        width: 100vw;
+        /* height: 100%; */
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        } */
+    </style>
+  </head>
+
+  <body>
     <div style="text-decoration: none">
-        <button style="
+      <button
+        style="
           width: fit-content;
           color: burlywood;
           background-color: bisque;
           border-radius: 5px;
           text-decoration: none;
           margin-bottom: 2%;
-        ">
-            <a href="/index.html">HOME </a>
-        </button>
+        "
+      >
+        <a href="/index.html">HOME </a>
+      </button>
     </div>
     <div class="nav_bar_main_container">
-        <div class="click_bar">
-            <img class="click_bar_img" src="task 2 click bar.png" alt="" />
-        </div>
+      <div class="click_bar">
+        <img class="click_bar_img" src="task 2 click bar.png" alt="" />
+      </div>
 
-        <div class="logo_nav_task2_logo_box">
-            <img class="logo_nav_task2_img" src="/jbl logo  jquery.webp" alt="" />
-        </div>
+      <div class="logo_nav_task2_logo_box">
+        <img class="logo_nav_task2_img" src="/jbl logo  jquery.webp" alt="" />
+      </div>
 
-        <ul class="nav_links_task2">
-            <li><a href="">Featured</a></li>
-            <li><a href="">Headphone</a></li>
-            <li><a href="">Speakers</a></li>
-            <li><a href="">Soundbar</a></li>
-            <li><a href="">Car Audio</a></li>
-        </ul>
+      <ul class="nav_links_task2">
+        <li><a href="">Featured</a></li>
+        <li><a href="">Headphone</a></li>
+        <li><a href="">Speakers</a></li>
+        <li><a href="">Soundbar</a></li>
+        <li><a href="">Car Audio</a></li>
+      </ul>
 
-        <div class="nav_task2_icons_box">
-            <img class="nav_task2_icons_img" src="search task 2 jquery.png" alt="" />
-            <img class="nav_task2_icons_img" src="/cart task2 jquery.png" alt="" />
-        </div>
+      <div class="nav_task2_icons_box">
+        <img
+          class="nav_task2_icons_img"
+          src="search task 2 jquery.png"
+          alt=""
+        />
+        <img class="nav_task2_icons_img" src="/cart task2 jquery.png" alt="" />
+      </div>
     </div>
-</body>
 
-<script src="script_cdn.js"></script>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            class="Swiper_img_banner_task_2_jbl"
+            src="/jbl_banner_1_task2.jpg"
+            alt=""
+          />
+        </div>
 
-<script src="script.js"></script>
+        <div class="swiper-slide">
+          <img
+            class="Swiper_img_banner_task_2_jbl"
+            src="/jbl_banner_2_task2.jpg"
+            alt=""
+          />
+        </div>
 
+        <div class="swiper-slide">
+          <img
+            class="Swiper_img_banner_task_2_jbl"
+            src="/jbl_banner_3_task2.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="swiper-slide">
+          <img
+            class="Swiper_img_banner_task_2_jbl"
+            src="/jbl_banner_4_task2.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+
+  <script src="script_cdn.js"></script>
+
+  <script src="script.js"></script>
 </html>
