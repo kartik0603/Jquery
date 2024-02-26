@@ -40,8 +40,8 @@
     width: 99vw;
   }
 
-  .swiper-button-next {
-    width: 20px;
-    height: 25px;
+  
+  :root {
+    --swiper-navigation-size: 24px;
   }
 }
