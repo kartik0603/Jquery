@@ -73,9 +73,14 @@
  
   width: 130px;
   height: 330px;
+  box-shadow: none;
  
 
 }
+.jbl_products:hover {
+  box-shadow: none
+}
+
 .jbl_products_imgs {
   width: 110px;
   height: 90px;
