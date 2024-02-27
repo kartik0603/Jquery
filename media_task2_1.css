@@ -1,0 +1,47 @@
+@media only screen and (max-width: 769px) {
+  .nav_links_task2 {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 40vw;
+    height: 30%;
+    text-align: center;
+    background: white;
+    color: black;
+    top: 130px;
+    left: 0px;
+    border: 0.5px solid rgb(250, 70, 22);
+    z-index: 1000;
+  }
+
+  .click_bar {
+    display: block;
+  }
+  .nav_links_task2 li {
+    margin: 2%;
+  }
+
+  .nav_links_task2 li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    /* justify-content: center; */
+
+    align-items: center;
+  }
+
+  .nav_bar_main_container {
+    width: 100vw;
+  }
+
+  .Swiper_img_banner_task_2_jbl {
+    width: 99vw;
+  }
+
+  
+  :root {
+    --swiper-navigation-size: 24px;
+  }
+}
