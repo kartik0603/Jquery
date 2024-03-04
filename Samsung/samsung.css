@@ -283,21 +283,44 @@
   color: black !important;
 }
 
-.samsung_baneer {
-  display: flex;
-  width: 100vw;
+
+
+.mySlides_img {
+   
+
+  display: block;
+  width: 100%;
   height: 100%;
 
-  justify-content: center;
-  align-items: center;
-  /* margin-top: 3%; */
-}
+  object-fit: cover;
 
-.mySlides {
-  width: 74vw;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   
+}
+
+
+.mySwiper1
+{
+  width: 100vw;
+  height: 600px;
+
+  /* height: 100%; */
+  /* margin-top: 5%; */
+}
+
+.mySlidesvideo
+{
+  width: 100vw;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .samsung_video_container {
@@ -2032,3 +2055,214 @@
   border-radius: 10px;
   border: none;
 }
+
+
+.samsung_Do_the_SmartThings_tab_view_img4_01
+{
+  background-image: url(stay\ fit\ and\ healthy\ img\ 1\ samsung.jpg);
+  width: 33vw;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.samsung_Do_the_SmartThings_tab_view_img4_02
+{
+  background-image: url(stay\ fit\ and\ healthy\ img\ 2\ samsung.jpg);
+  width: 33vw;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.samsung_Do_the_SmartThings_tab_view_img4_03
+{
+  background-image: url(stay\ fit\ and\ healthy\ img\ 3\ samsung.jpg);
+  width: 33vw;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.samsung_Do_the_SmartThings_tab_view_big_text4
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.samsung_Do_the_SmartThings_text_box4
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 500px;
+  right: 30px;
+}
+
+.samsung_Do_the_SmartThings_tab_view_btn4
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  
+  
+  width: 70px;
+  height: 30px;
+ 
+  background-color: black;
+  color: white;
+  font-size: small;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+}
+
+.samsung_Do_the_SmartThings_tab_view_img5_01
+{
+  background-image: url(set\ the\ mood\ samsung\ img\ 1.jpg);
+  width: 33vw;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.samsung_Do_the_SmartThings_tab_view_img5_02
+{
+  background-image: url(set\ the\ mood\ samsung\ img\ 2.jpg);
+  width: 33vw;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.samsung_Do_the_SmartThings_tab_view_img5_03
+{
+  background-image: url(set\ the\ mood\ samsung\ img\ 3.jpg);
+  width: 33vw;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.samsung_Do_the_SmartThings_text_box5
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 500px;
+  right: 30px;
+}
+
+.samsung_Do_the_SmartThings_tab_view_big_text5
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.samsung_Do_the_SmartThings_tab_view_btn5
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  
+  
+  width: 70px;
+  height: 30px;
+ 
+  background-color: black;
+  color: white;
+  font-size: small;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+}
+
+
+.samsung_footer_main_container
+{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  width: 99vw;
+  height: 100%;
+  /* border: 5px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 5%;
+  /* margin-left: 2%; */
+  
+  
+}
+
+.samsung_footer_content_box{
+  /* display: flex; */
+  flex-direction: column;
+  /* align-items: center; */
+  width: 18vw;
+  height: fit-content;
+  /* border:  1px solid #7810da; */
+  margin-top: 5%;
+}
+
+.samsung_footer_heading_text
+{
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.samsung_footer_links
+{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 18vw;
+    height: fit-content;
+    /* border:  1px solid #10da4d; */
+    margin: 5%;
+   
+}
+
+.samsung_footer_links_text
+{
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 2%;
+  transition: all 0.8s;
+
+  
+}
+
+.samsung_footer_links_text:hover
+{
+  color: blue;
+  font-size: 17px;
+}
+
+
+
+
+
+.samsung_dark_mode_box
+{
+  position: fixed;
+  bottom:  0;
+  left: 1400px;
+  z-index: 1000;
+}
+
+.samsung_dark_mode_img
+{
+  width: 80px;
+  height: 80px;
+}
+
+
+
+
+/* <-> */
+
+
