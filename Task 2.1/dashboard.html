@@ -69,38 +69,44 @@
       <div class="chart_container">
 
         <div class="chart_up_1">
+
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-     <div id="gauge_div"></div>
-  <input type="button" value="Go Faster" onclick="changeTemp(1)" />
-  <input type="button" value="Slow down" onclick="changeTemp(-1)" />
-  <script>
-        google.charts.load('current', {'packages':['gauge']});
-    google.charts.setOnLoadCallback(drawGauge);
-
-    var gaugeOptions = {min: 0, max: 280, yellowFrom: 200, yellowTo: 250,
-      redFrom: 250, redTo: 280, minorTicks: 5};
-    var gauge;
-
-    function drawGauge() {
-      gaugeData = new google.visualization.DataTable();
-      gaugeData.addColumn('number', 'Engine');
-      gaugeData.addColumn('number', 'Torpedo');
-      gaugeData.addRows(2);
-      gaugeData.setCell(0, 0, 120);
-      gaugeData.setCell(0, 1, 80);
-
-      gauge = new google.visualization.Gauge(document.getElementById('gauge_div'));
-      gauge.draw(gaugeData, gaugeOptions);
-    }
-
-    function changeTemp(dir) {
-      gaugeData.setValue(0, 0, gaugeData.getValue(0, 0) + dir * 25);
-      gaugeData.setValue(0, 1, gaugeData.getValue(0, 1) + dir * 20);
-      gauge.draw(gaugeData, gaugeOptions);
-    }
-  </script>
-
-        </div>
+          <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawSeriesChart);
+      
+          function drawSeriesChart() {
+      
+            var data = google.visualization.arrayToDataTable([
+              ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
+              ['CAN',    80.66,              1.67,      'North America',  33739900],
+              ['DEU',    79.84,              1.36,      'Europe',         81902307],
+              ['DNK',    78.6,               1.84,      'Europe',         5523095],
+              ['EGY',    72.73,              2.78,      'Middle East',    79716203],
+              ['GBR',    80.05,              2,         'Europe',         61801570],
+              ['IRN',    72.49,              1.7,       'Middle East',    73137148],
+              ['IRQ',    68.09,              4.77,      'Middle East',    31090763],
+              ['ISR',    81.55,              2.96,      'Middle East',    7485600],
+              ['RUS',    68.6,               1.54,      'Europe',         141850000],
+              ['USA',    78.09,              2.05,      'North America',  307007000]
+            ]);
+      
+            var options = {
+              title: 'Fertility rate vs life expectancy in selected countries (2010).' +
+                ' X=Life Expectancy, Y=Fertility, Bubble size=Population, Bubble color=Region',
+              hAxis: {title: 'Life Expectancy'},
+              vAxis: {title: 'Fertility Rate'},
+              bubble: {textStyle: {fontSize: 11}}
+            };
+      
+            var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+            chart.draw(data, options);
+          }
+          </script>
+  
+  <div id="series_chart_div"></div>
+  
+       </div> 
 
         <div class="chart_up_2">
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
