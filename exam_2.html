@@ -17,9 +17,23 @@
     <img class="samsung_dark_mode_img" src="dark-mode samsung img.png" alt="">
   </div>
 
-  <form id="form"></form>
+ 
     
 </body>
+<form id="form">
+
+
+    <input type="text" id="title" placeholder="title">
+    <input type="url" id="url" placeholder="url">
+    <input type="number" id="price" placeholder="price">
+    <input type="submit" id="button" value="add">
+  </form>
+
+  
+
+  <div id="box">
+
+  </div>
 
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
@@ -28,6 +42,22 @@
     $(".samsung_dark_mode_img").click(()=>{
 
         $("body").toggleClass("dark");
+
+    });
+
+    $("#form").submit((event) =>{
+
+        event.preventDefault();
+
+        let title = $("#title").val();
+        let url =$("url").val();
+        let price =$("#price").val();
+
+        $("#box").append(`<p> ${title}</p>`).append(`<p>${price}</p>`).append(`<img src=${url}/>`);
+
+
+
+
 
     });
 </script>
