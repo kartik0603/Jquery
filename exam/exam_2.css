@@ -56,3 +56,80 @@ width: 80vw;
     width: 80px;
     height: 80px;
   }
+
+  #form
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20%;
+    width: 100vw;
+    height: 100%;
+
+  }
+
+  #title
+  {
+    width: 300px;
+    font-size: large;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+  }
+
+  #url
+  {
+    width: 300px;
+    font-size: large;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+  }
+
+  #price
+  {
+    width: 300px;
+    font-size: large;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+  }
+
+  #button
+  {
+    width: 100px;
+    font-size: larger;
+    height: 50px;
+    border: 5px solid rgb(235, 231, 7);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+    background-color: coral;
+    
+  }
+
+  #box
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    margin: 1.5%;
+    border: 3px solid rgb(113, 7, 235);
+
+  }
+  img
+  {
+    width: 300px;
+    height: 200px;
+  }
