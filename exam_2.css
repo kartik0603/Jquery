@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --BgColor:rgb(255, 255, 255);
+    --TextColor:rgb(0, 0, 0);
+}
+
+.dark
+{
+    --BgColor:rgb(0, 0, 0);
+    --TextColor:rgb(255, 255, 255);
+}
+
+body
+{
+    background-color: var(--BgColor);
+}
+.Quotes_box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.qotes_img
+{
+width: 80vw;
+}
+
+.Quotes_text
+{
+    color:var(--TextColor) ;
+    font-size: 43px;
+    font-weight: bolder;
+    font-family: cursive;
+    text-align: center;
+}
+
+.samsung_dark_mode_box {
+    position: fixed;
+    bottom: 0;
+    left: 1400px;
+    z-index: 1000;
+  }
+  
+  .samsung_dark_mode_img {
+    width: 80px;
+    height: 80px;
+  }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam-Dark(mode)</title>
+    <link rel="stylesheet" href="exam_2.css">
+</head>
+<body>
+
+    <div class="Quotes_box">
+        <img class="qotes_img" src="stunning-ocean-sunset-view-8de1r4nxvu353vu4.jpg" alt="">
+        <p class="Quotes_text">“Success is not final; failure is not fatal: It is the courage <br> to continue that counts.”</p>
+    </div>
+
+  <div class="samsung_dark_mode_box">
+    <img class="samsung_dark_mode_img" src="dark-mode samsung img.png" alt="">
+  </div>
+
+  <form id="form"></form>
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+<script>
+    $(".samsung_dark_mode_img").click(()=>{
+
+        $("body").toggleClass("dark");
+
+    });
+</script>
+</html>
