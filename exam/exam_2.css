@@ -79,6 +79,7 @@ width: 80vw;
     border-radius: 10px;
     text-align: center;
     margin: 2%;
+    color: var(--TextColor);
   }
 
   #url
@@ -101,6 +102,8 @@ width: 80vw;
     border-radius: 10px;
     text-align: center;
     margin: 2%;
+    color: var(--TextColor);
+
   }
 
   #button
@@ -113,6 +116,8 @@ width: 80vw;
     text-align: center;
     margin: 2%;
     background-color: coral;
+    color: var(--TextColor);
+
     
   }
 
@@ -128,7 +133,7 @@ width: 80vw;
     border: 3px solid rgb(113, 7, 235);
 
   }
-  img
+  .addimg
   {
     width: 300px;
     height: 200px;
